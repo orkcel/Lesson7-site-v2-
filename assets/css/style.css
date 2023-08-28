@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Nova+Square&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fasthand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,800&display=swap");
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+
+/* content */
+.mastercontent {
+    background-color: rgb(170, 170, 255);
+    min-width: 100%;
+    min-height: 700px;
+    position: relative;
+    overflow: hidden;
+}
+
+.mastercontent video {
+    position: absolute;
+    min-width: 100%;    
+    min-height: 700px;
+    background-position: center center;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.header-content {
+    z-index: 2;
+    position: relative;
+}
+
+/* header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-family: "Anton", sans-serif;
+    font-size: 2em;
+   
+}
+
+.inlogo {
+    display: flex;
+    font-size: 2em;
+    text-decoration: none;
+    color: ghostwhite;
+    padding: 0.5em;
+}
+
+.navbtns {
+    display: flex;
+   
+}
+
+.navbrgr {
+    display: none;
+}
+
+.header ul {
+    display: flex;
+    list-style: none;
+    padding: 15px;
+}
+
+.header a {
+    display: flex;
+    font-family: "Nova square", sans-serif;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: 0.3s;
+    color: wheat;
+    padding: 0.5em;
+    margin-top: 57px;
+}
+
+.header a:hover {
+    color: rgb(77, 77, 200);
+    transform: scale(1.1);
+}
+
+/* main */
+.main h1 {
+    display: flex;
+    font-family: "Merriweather Sans", sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    justify-content: center;
+    font-size: 3em;
+    color: white;
+    margin: 150px 0 20px 0;
+    padding: 0 20px;
+}
+
+.main p {
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+    font-family: "Fasthand", cursive;
+    font-size: 2em;
+    color: white;
+    margin: 0 0 20px 0;
+}
+
+.start {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 20px 0;
+}
+
+.startbutton {
+    border-radius: 50px;
+    background-color: wheat;
+    height: 60px;
+    padding: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+
+.startbutton:hover {
+    background-color: rgb(77, 77, 200);
+    color: white;
+    text-decoration: none;
+    transform: scale(1.1);  
+    transition: 0.3s;
+}
+
+/* section */
+
+.section-content {
+
+    background-color: antiquewhite;
+    
+}
+.card-row {
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1170px;
+    height: 400px;
+    margin: 0 auto;
+    
+
+}
+.card {
+    background-color: rgb(170, 170, 250);
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    max-height: 100%;
+    border: 1px black solid;
+    border-radius: 25px;
+    padding: 15px;
+    margin-top: -65px;
+    z-index: 3;
+}
+
+.card:hover {
+    background-color: rgb(77, 77, 200);
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.card-name {
+    font-family: "Nova square", sans-serif;
+    text-align: center;
+    padding: 0 0 10px 0;
+    color: wheat
+}
+.card-discription {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    color: whitesmoke;
+}
+
+/* footer */
+
+.basement {
+    text-align: center;
+    height: 265px;
+    background-color: wheat;
+}
+
+.crl {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+    text-decoration: none;
+    padding-top: 55px;
+    padding-bottom: 20px;
+}
+
+.circlelinks {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.circle {
+    background: black;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    user-select: none;
+}
+
+.circle:hover {
+    background-color: rgb(77, 77, 200);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.circle img {
+    filter: invert();
+    width: 72px;
+}
+
+
+@media (max-width: 967px) {
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .logo {
+        
+        font-size: 2em;
+        padding: 15px;
+        margin-left: 50px;
+    }
+
+    .header ul {
+        flex-direction: column;
+        padding: 0;
+        gap: 10px;
+    }
+
+    .header a {
+        margin-top: 0 ;
+        padding: 0;
+        
+        
+    }
+
+    .navbtns {
+        display: none;
+        margin: 0;
+
+    }
+
+    .navbrgr {
+        font-size: 3em;
+        border: none;
+        background-color: transparent;
+        color: wheat;
+        display: block;
+        cursor: pointer;
+        margin-right: 25px;
+        padding-top: 50px
+    }
+
+    .drop:hover  .navbtns {
+        display: block;
+        position: absolute;
+        right: 15px;
+        background-color: transparent
+    
+     }
+
+     .navbtns li {
+        animation-duration: 1.5s;
+        animation-name: slideout;
+     }
+
+
+     @keyframes slideout {
+        0%  {
+            margin-top: -50%;
+        }
+       
+        100%  {
+            margin-top: 0%;
+        }
+        
+     }
+
+     .card-row {
+        flex-direction: column;
+        align-items: center;
+        height: 1800px;
+
+        
+     }
+
+     .card {
+        width: 50%;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    
+        
+     }
+
+     .card:last-child {
+        margin-bottom: 20px;
+    }
+}
